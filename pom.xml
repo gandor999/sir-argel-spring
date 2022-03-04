@@ -12,12 +12,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
-	<properties>
-		<java.version>11</java.version>
-		<maven.compiler.version>3.8.1</maven.compiler.version>
-		<maven.surefire.version>2.22.2</maven.surefire.version>
-		<karate.version>1.1.0</karate.version>
-	</properties>
+
 	<repositories>
 		<repository>
 			<snapshots>
@@ -28,6 +23,14 @@
 			<url>http://dl.bintray.com/epam/reportportal</url>
 		</repository>
 	</repositories>
+
+	<properties>
+		<java.version>11</java.version>
+		<maven.compiler.version>3.8.1</maven.compiler.version>
+		<maven.surefire.version>2.22.2</maven.surefire.version>
+		<karate.version>1.1.0</karate.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,17 +45,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>com.intuit.karate</groupId>
 			<artifactId>karate-core</artifactId>
 			<version>0.9.4</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>com.epam.reportportal</groupId>
 			<artifactId>client-java</artifactId>
-			<version>4.0.16</version>
+			<version>4.0.19</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.epam.reportportal</groupId>
 			<artifactId>commons-model</artifactId>
